@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório - Jogos de Flexbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+        }
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Relatório de Experiência com Jogos de Flexbox</h1>
+
+    <section>
+        <h2>Dados do Aluno</h2>
+        <p><strong>Nome completo:</strong>Lunan Paulino Oliveira</p>
+    </section>
+
+    <section>
+        <h2>Jogos Escolhidos</h2>
+
+        <h3>1. Flexbox Zombies</h3>
+        <p><strong>Link:</strong> <a href="https://mastery.games/flexboxzombies/" target="_blank">https://mastery.games/flexboxzombies/</a></p>
+        <p>Escolhi esse jogo por ser muito visual e divertido, com uma temática diferente (zumbis e flechas) que torna o aprendizado mais dinâmico. As animações e os diálogos também ajudam na imersão e no entendimento.</p>
+
+        <h3>2. Flexbox Adventure</h3>
+        <p><strong>Link:</strong> <a href="https://codingfantasy.com/games/flexbox-adventure" target="_blank">https://codingfantasy.com/games/flexbox-adventure</a></p>
+        <p>Esse jogo tem uma proposta narrativa envolvente e apresenta os conceitos de Flexbox de forma bem progressiva, ideal para reforçar o conhecimento de maneira prática e divertida.</p>
+    </section>
+
+    <section>
+        <h2>Registro de Níveis</h2>
+
+        <h3>Flexbox Zombies – Níveis Desafiadores</h3>
+
+        <h4>Nível 2 – Justify Content</h4>
+        <img src="imagens/nivel2.png" alt="Flexbox Zombies Nível 2">
+        <p>Esse nível exigiu entender bem como o justify-content funciona com diferentes valores como <code>flex-end</code> e <code>space-between</code>. Posicionar os zumbis corretamente foi um desafio interessante.</p>
+
+        <h4>Nível 3 – Align Items</h4>
+        <img src="imagens/nivel3.png" alt="Flexbox Zombies Nível 3">
+        <p>Foi desafiador porque o alinhamento vertical não era tão intuitivo e exigia prestar atenção na direção do eixo principal.</p>
+
+        <h4>Nível 12 – To The Death</h4>
+        <img src="imagens/nivel12.png" alt="Flexbox Zombies Nível 12">
+        <p>Nesse nível o jogo mistura justify-content com align-items, exigindo aplicar mais de uma propriedade corretamente.</p>
+
+        <h3>Flexbox Froggy – Níveis Desafiadores</h3>
+
+        <h4>Fase 3 – flex-direction</h4>
+        <img src="imagens/fnivel3.png" alt="Flexbox Froggy Nível 3">
+        <p>Foi necessário inverter a direção dos sapos com <code>flex-direction: row-reverse</code>, o que inicialmente confundiu a posição deles em relação às lilypads.</p>
+
+        <h4>Fase 5 – align-self</h4>
+        <img src="imagens/fnivel5.png" alt="Flexbox Froggy Nível 5">
+        <p>A dificuldade aqui foi entender como <code>align-self</code> afeta apenas um único sapo, diferente de <code>align-items</code>, que controla todos ao mesmo tempo.</p>
+
+        <h4>Fase 7 – flex-wrap e wrap-reverse</h4>
+        <img src="imagens/fnivel7.png" alt="Flexbox Froggy Nível 7">
+        <p>O uso de <code>flex-wrap</code> adicionou complexidade ao fazer os sapos se moverem para múltiplas linhas, especialmente com <code>wrap-reverse</code>, que inverte a direção da quebra.</p>
+    </section>
+
+    <section>
+        <h2>Reflexão e Aplicação Prática</h2>
+
+        <h3>Propriedades CSS Utilizadas:</h3>
+        <ul>
+            <li><strong>display: flex;</strong> – Inicia o contexto Flexbox no container.</li>
+            <li><strong>justify-content:</strong> – Alinha os itens no eixo principal (horizontal).</li>
+            <li><strong>align-items:</strong> – Alinha os itens no eixo cruzado (vertical).</li>
+            <li><strong>flex-direction:</strong> – Define a direção do layout (row, column, etc).</li>
+            <li><strong>flex-wrap:</strong> – Permite que os itens quebrem linha se não couberem.</li>
+            <li><strong>align-self:</strong> – Alinha individualmente um item específico.</li>
+        </ul>
+
+        <h3>Aplicação Prática:</h3>
+        <p>Imagine um site com um menu de navegação no topo. Utilizando Flexbox, seria possível alinhar os itens horizontalmente com <code>display: flex</code> e <code>justify-content: space-between</code> para distribuí-los de forma uniforme. Além disso, com <code>align-items: center</code>, os itens ficariam alinhados verticalmente no centro da barra. Em telas menores, poderíamos usar <code>flex-wrap: wrap</code> para que os botões do menu se organizem em múltiplas linhas, mantendo a responsividade.</p>
+    </section>
+
+</body>
+</html>
